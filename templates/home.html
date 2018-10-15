@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+ 
+ 
+ <html> 
+     <head> 
+        <h1>User Signup</h1> 
+         <style> 
+         
+             .error { 
+                 color: rgb(255, 0, 0); 
+             } 
+         </style> 
+     </head> 
+     <body>          
+         <form method='POST'> 
+             <label for="username">Username</label> 
+                 <input name="username" type="text" value='{{username}}' /> 
+             </label> 
+             <p class= "error"> {{usernameerror}} </p> 
+ 
+ 
+             <label for="password">Password</label> 
+                 <input name="password" type="password" /> 
+             <p class= "error"> {{passworderror}} </p> 
+ 
+ 
+             <label for="verify">Verify Password</label> 
+                 <input name="verify" type="password" /> 
+             <p class= "error"> {{verifyerror}} </p> 
+ 
+
+             <label for="email">Email (optional)</label> 
+                 <input name="email" type="text" value='{{email}}' /> 
+             <p class= "error"> {{emailerror}} </p>  
+ 
+ 
+             <input type="submit"> 
+         </form> 
+     </body> 
+ </html> 
